@@ -1,0 +1,45 @@
+name: Deploy PWA to GitHub Pages
+
+on:
+  push:
+    branches: [main]
+  workflow_dispatch:
+
+permissions:
+  contents: read
+  pages: write
+  id-token: write
+
+concurrency:
+  group: pages
+  cancel-in-progress: false
+
+jobs:
+  deploy:
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Extract web app from ZIP
+        run: |
+          mkdir -p site
+          ZIP_FILE=$(find . -maxdepth 1 -name "*.zip" | head -n 1)
+          unzip -q "$ZIP_FILE" -d extracted
+          INDEX_DIR=$(dirname "$(find extracted -name 'index.html' | head -n 1)")
+          cp -r "$INDEX_DIR"/* site/
+
+      - name: Setup Pages
+        uses: actions/configure-pages@v5
+
+      - name: Upload artifact
+        uses: actions/upload-pages-artifact@v3
+        with:
+          path: site
+
+      - name: Deploy to GitHub Pages
+        id: deployment
+        uses: actions/deploy-pages@v4
