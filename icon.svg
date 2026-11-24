@@ -1,0 +1,20 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+<defs>
+<radialGradient id="bg" cx="50%" cy="55%" r="55%"><stop offset="0" stop-color="#0f4a38"/><stop offset="1" stop-color="#06201a"/></radialGradient>
+<linearGradient id="face" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#5dffb2"/><stop offset="1" stop-color="#00c46a"/></linearGradient>
+</defs>
+<rect width="512" height="512" fill="url(#bg)"/>
+<g stroke="#34f59a" stroke-width="11" stroke-linecap="round" opacity=".55"><line x1="181.0" y1="414.9" x2="166.0" y2="440.9"/><line x1="126.1" y1="360.0" x2="100.1" y2="375.0"/><line x1="106.0" y1="285.0" x2="76.0" y2="285.0"/><line x1="126.1" y1="210.0" x2="100.1" y2="195.0"/><line x1="385.9" y1="210.0" x2="411.9" y2="195.0"/><line x1="406.0" y1="285.0" x2="436.0" y2="285.0"/><line x1="385.9" y1="360.0" x2="411.9" y2="375.0"/><line x1="331.0" y1="414.9" x2="346.0" y2="440.9"/></g>
+<g fill="#34f59a"><path d="M108 124 Q108 150 134 150 Q108 150 108 176 Q108 150 82 150 Q108 150 108 124Z"/><path d="M418 110 Q418 140 448 140 Q418 140 418 170 Q418 140 388 140 Q418 140 418 110Z"/><path d="M92 314 Q92 330 108 330 Q92 330 92 346 Q92 330 76 330 Q92 330 92 314Z"/><path d="M430 312 Q430 330 448 330 Q430 330 430 348 Q430 330 412 330 Q430 330 430 312Z"/></g>
+<circle cx="256" cy="285" r="125" fill="url(#face)"/>
+<g fill="#ffffff" opacity=".22"><circle cx="180" cy="335" r="15"/><circle cx="332" cy="335" r="15"/></g>
+<g fill="#ffffff" fill-opacity=".3" stroke="#06201a" stroke-width="9"><circle cx="212" cy="285" r="31"/><circle cx="300" cy="285" r="31"/></g>
+<path d="M243 281 Q256 272 269 281" fill="none" stroke="#06201a" stroke-width="9" stroke-linecap="round"/>
+<g fill="#06201a"><circle cx="214" cy="287" r="11"/><circle cx="302" cy="287" r="11"/></g>
+<g fill="#ffffff"><circle cx="218" cy="283" r="4"/><circle cx="306" cy="283" r="4"/></g>
+<path d="M200 338 Q256 398 312 338" fill="none" stroke="#06201a" stroke-width="13" stroke-linecap="round"/>
+<path d="M172 176 L340 176 L330 214 Q256 238 182 214Z" fill="#0b3228" stroke="#e8f7ef" stroke-width="6" stroke-linejoin="round"/>
+<path d="M256 92 L408 150 L256 208 L104 150Z" fill="#e8f7ef" stroke="#06201a" stroke-width="5" stroke-linejoin="round"/>
+<path d="M256 150 L392 158 L392 206" fill="none" stroke="#34f59a" stroke-width="7" stroke-linecap="round" stroke-linejoin="round"/>
+<circle cx="392" cy="212" r="9" fill="#34f59a"/><circle cx="256" cy="150" r="7" fill="#06201a"/>
+</svg>
